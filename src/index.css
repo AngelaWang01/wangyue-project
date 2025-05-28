@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'SimSun';
+  src: url('https://fonts.cdnfonts.com/s/23752/SimSun.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  font-family: 'SimSun', serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.moonlight-bg {
+  background-color: #F5EEDC;
+}
+
+.btn-primary {
+  @apply bg-amber-500 hover:bg-amber-600 text-black font-medium py-3 px-6 rounded-full 
+  transition-all duration-300 ease-in-out shadow-md hover:shadow-lg 
+  focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-opacity-50;
+  min-width: 200px;
+}
+
+.btn-secondary {
+  @apply bg-gray-300 text-gray-500 font-medium py-3 px-6 rounded-full 
+  shadow-md cursor-not-allowed;
+  min-width: 200px;
+}
+
+.input-field {
+  @apply block w-full p-3 text-xl bg-white border border-gray-300 rounded-lg
+  focus:outline-none focus:ring-2 focus:ring-amber-400;
+}
+
+.audio-btn {
+  @apply p-2 rounded-full text-amber-500 hover:text-amber-700 hover:bg-amber-100 transition-all;
+}
+
+.language-btn {
+  @apply px-3 py-1 text-sm rounded-md transition-all mr-2 hover:bg-amber-100;
+}
+
+.language-btn.active {
+  @apply bg-amber-500 text-white hover:bg-amber-600;
+}
+
+.feature-button {
+  @apply text-black hover:bg-amber-50 border border-amber-100;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Elder mode specific styles */
+.elder-mode .btn-primary {
+  @apply py-4 px-8 text-2xl;
+}
+
+.elder-mode .input-field {
+  @apply p-4 text-2xl;
+}
+
+.elder-mode .welcome-text {
+  @apply text-3xl;
+}
+
+.elder-mode .feature-button {
+  @apply p-8;
+}
+
+.elder-mode .feature-button h2 {
+  @apply text-3xl;
+}
+
+.elder-mode .feature-button p {
+  @apply text-lg;
+}
+
+/* Translation page specific styles */
+.elder-mode textarea {
+  @apply text-2xl !important;
+}
+
+.elder-mode button {
+  @apply text-xl !important;
+}
