@@ -1,3 +1,63 @@
 # wangyue-project
 
-[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/AngelaWang01/wangyue-project)
+📝 项目名称：望月 AI · MoonEcho
+
+“愿每一个孤独的夜晚，都有月亮回应。”
+
+⸻
+
+📌 项目简介
+
+望月 AI 是一款专为 海外华人老年人 设计的 AI 数字陪伴产品，融合了情感陪护、语言翻译、生活助手、用药提醒等功能，致力于通过 AI 技术帮助老年人跨越数字鸿沟，让他们在异国他乡也能感受到温暖与理解。
+
+⸻
+
+🎯 项目目标
+	•	🌍 跨语言沟通：帮助不会英语的老人完成就医、购物、社交等基本对话。
+	•	🧠 情感陪伴：通过对话和问候缓解孤独，提供人性化的精神支持。
+	•	💊 健康关怀：实现定时提醒用药、健康建议等实用功能。
+	•	🧭 生活导航：提供公交路线、地图指引等实用服务。
+
+⸻
+
+⚙ 技术架构
+	•	前端：HTML + Tailwind CSS + TypeScript + Vite
+	•	UI 设计：简洁、高对比度、适老化界面（字体大、按钮大）
+	•	开发平台：通过 BOLT AI 搭建无代码原型，现已迁移至 GitHub 管理代码版本
+	•	预备集成：
+	•	Gemini / GPT 模型调用（API 接入）
+	•	本地语音识别/合成（Speech-to-Text + Text-to-Speech）
+
+⸻
+
+🛠 使用方式（当前版本为测试原型）
+	1.	克隆项目代码至本地：
+
+git clone https://github.com/AngelaWang01/wangyue-project.git
+cd wangyue-project
+npm install
+npm run dev
+
+	2.	浏览器打开 http://localhost:5173，即可进入欢迎页。
+	3.	点击 “进入望月 AI”，可跳转至功能选择页面（开发中）。
+
+⸻
+
+🔮 未来规划
+	•	✅ 增加中英双语翻译模块
+	•	✅ 增加语音对话入口，提升交互友好度
+	•	✅ 打通 Google Gemini / OpenAI GPT 多模型支持
+	•	✅ 收集老年人真实反馈，优化界面与交互
+	•	✅ 移动端适配版本发布
+
+⸻
+
+💌 项目愿景
+
+在这个数字世界快速演进的时代，我们不能让老年人被落在身后。
+望月 AI 的目标，是在每一位长者的夜晚，点亮一束温柔的 AI 月光。
+让他们知道：你不再孤单，我一直都在。
+
+⸻
+
+更新 README.md：添加中文项目介绍
