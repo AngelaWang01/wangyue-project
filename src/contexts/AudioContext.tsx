@@ -30,7 +30,13 @@ export const AudioProvider: React.FC<AudioProviderProps> = ({ children }) => {
   }, []);
 
   const toggleAudio = () => {
-    setAudioEnabled(!audioEnabled);
+    setAudioEnabled(prev => {
+      if (prev && speechSynthesis) {
+        // Cancel any ongoing speech when disabling audio
+        speechSynthesis.cancel();
+      }
+      return !prev;
+    });
   };
 
   const speak = (text: string) => {
