@@ -60,4 +60,3 @@ npm run dev
 
 ⸻
 
-更新 README.md：添加中文项目介绍

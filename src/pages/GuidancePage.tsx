@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Navigate } from 'react-router-dom';
-import { Send, Mic, Guitar as Hospital, Car, PartyPopper, Phone } from 'lucide-react';
+import { Send, Mic, Hospital, Car, PartyPopper, Phone } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 import { useAudio } from '../contexts/AudioContext';
 import { useLanguage } from '../contexts/LanguageContext';
